@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+
+nav a{
+    position: relative;
+    margin: 0 20px;
+    font-size: 1.5em;
+    color: #000;
+    text-decoration: none;
+   
+}
+
+nav .animate-box{
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: #000;
+    transition: 0.5s;
+    bottom: -8px;
+    border-radius: 5px;
+}

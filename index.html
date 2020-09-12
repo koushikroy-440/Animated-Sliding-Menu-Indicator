@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+      <nav>
+          <div class="animate-box"></div>
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact us</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Images</a>
+      </nav>
+<script>
+    var marker = document.querySelector(".animate-box");
+    var item = document.querySelectorAll("nav a");
+    function effect(e){
+        marker.style.left = e.offsetLeft+"px";
+        marker.style.width = e.offsetWidth+"px";
+        marker.style.backgroundColor = "red";
+    }
+
+    item.forEach(link =>{
+        link.addEventListener('mousemove',(e)=>{
+            effect(e.target);
+        })
+    })
+
+</script>
+  </body>
+</html>
